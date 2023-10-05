@@ -1,0 +1,5 @@
+dreamyPath: be.alexandre01.dnfirewall.MainAddon
+dreamyName: FirewallManager
+version: 1.0
+authors: [Alexandre01]
+description: Addon who manage the firewall (UFW)
