@@ -49,7 +49,7 @@ public class MainAddon extends DreamExtension {
                         System.out.println("Firewall -> UFW is disabled");
                         System.out.println("Adding ssh port and Enabling UFW ");
                         // adding ssh rule to ufw (need to create a config file later)
-                        rulesFactory.addRule("22",new RulesFactory.Rule("22"));
+                        rulesFactory.addRule("ssh",new RulesFactory.Rule("ssh"));
                         rulesFactory.enableUFW();
                     }
                   /*  for (String line : lines) {
