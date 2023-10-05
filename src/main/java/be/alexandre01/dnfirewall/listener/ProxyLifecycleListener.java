@@ -6,6 +6,7 @@ import be.alexandre01.dreamnetwork.api.events.EventCatcher;
 import be.alexandre01.dreamnetwork.api.events.Listener;
 import be.alexandre01.dreamnetwork.api.events.list.commands.CoreCommandExecuteEvent;
 import be.alexandre01.dreamnetwork.api.events.list.services.CoreServiceLinkedEvent;
+import be.alexandre01.dreamnetwork.api.events.list.services.CoreServiceStartEvent;
 import be.alexandre01.dreamnetwork.api.events.list.services.CoreServiceStopEvent;
 import be.alexandre01.dreamnetwork.api.service.IService;
 
@@ -21,7 +22,7 @@ public class ProxyLifecycleListener implements Listener {
 
 
     @EventCatcher
-    public void onStart(CoreServiceLinkedEvent event){
+    public void onStart(CoreServiceStartEvent event){
         IService service = event.getService();
         if(service.getJvmExecutor().isProxy()){
             String port = String.valueOf(service.getJvmExecutor().getPort());
