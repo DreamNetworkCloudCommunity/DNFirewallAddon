@@ -1,6 +1,6 @@
 # DNFirewallAddon
 
-### You must be running Linux. 
+### You must be running on Linux. 
 ### You must have UFW installed! (via apt-get (apt-get install ufw -y) or yum, ...) 
 You need to put it in the addons folder in the DreamNetwork root directory.
 Make sure DreamNetwork has root permissions at runtime
